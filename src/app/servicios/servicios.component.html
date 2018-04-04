@@ -1,0 +1,21 @@
+<h2>Conexion con Restcountries</h2>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Bandera</th>
+        <th>Nombre</th>
+        <th>Capital</th>
+        <th>Region</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- ngFor es un bucle para recorrer json-->
+      <tr *ngFor="let c of paises">
+        <td><img style="width:10%" src="{{c.flag}}"></td>
+        <td>{{ c.name }}</td>
+        <td>{{ c.capital }}</td>
+        <td>{{ c.region }}</td>
+      </tr>
+    </tbody>
+  </table>

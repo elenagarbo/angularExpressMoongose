@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Practica</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://image.afcdn.com/profil/D20051108/_619910835_elybig_H063638_L_s30.jpg">
+  <link rel="icon" type="image/png" href="https://image.afcdn.com/profil/D20051108/_619910835_elybig_H063638_L_s30.jpg" />
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>+
+  <script>
+  
+      jQuery(document).ready(function ($) {
+        //Set default open/close settings
+        var divs=$('.accordion>div').hide(); //Hide/close all containers
+    
+        var h2s=$('.accordion>h2').click(function () {
+            h2s.not(this).removeClass('active')
+            $(this).toggleClass('active')
+            divs.not($(this).next()).slideUp()
+            $(this).next().slideToggle()
+            return false; //Prevent the browser jump to the link anchor
+    
+        });
+    
+    
+    });
+      
+      </script>
+
+      <script>
+
+        jQuery(document).ready(function () {
+          var b = $("#button");
+          var w = $("#wrapper");
+          var l = $("#list");
+          b.click(function() {
+            w.toggleClass('open'); /* <-- toggle the application of the open class on click */
+          });
+        });
+
+      </script>
+</head>
+<body>
+ 
+    
+  <app-root></app-root>
+
+
+</body>
+</html>

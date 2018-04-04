@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+#wrapper {
+    background: #ccc;
+    overflow: hidden;
+    transition: max-height 300ms;
+    max-height: 50px; /* <---hide by default */
+  }
+  #wrapper.open {
+    max-height: 100px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+  }

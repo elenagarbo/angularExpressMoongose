@@ -1,0 +1,15 @@
+#imagen {
+    float: left;
+}
+
+img{
+    width: 30%;
+}
+
+#search {
+    float: right;
+}
+
+#general {
+    background-color:darkblue; 
+}

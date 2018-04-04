@@ -1,0 +1,21 @@
+<div class="container">
+        <table width="100% "class="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>fecha</th>
+              <th>descripcion</th>
+              <th>imagen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- ngFor es un bucle para recorrer json-->
+            <tr *ngFor="let a of articles">
+              <td>{{ a.titulo }}</td>
+              <td>{{ a.fecha }}</td>
+              <td>{{ a.descripcion }}</td>
+              <td><img src=" {{a.imagen }}"width="100px"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
